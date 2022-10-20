@@ -1,6 +1,6 @@
 class Bowling
 
   def results(num)
-    num
+    num.to_i
   end
 end
