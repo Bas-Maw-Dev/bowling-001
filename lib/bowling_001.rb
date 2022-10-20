@@ -4,6 +4,6 @@ class Bowling
 
     return 10 if num == 'X' || num == '/'
 
-    num.to_i
+    num.chars.map(&:to_i).sum
   end
 end
