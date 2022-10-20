@@ -10,4 +10,9 @@ describe 'bowling' do
     scorecard = Bowling.new
     expect(scorecard.results('1')).to eq(1)
   end
+
+  it 'scores ten' do
+    scorecard = Bowling.new
+    expect(scorecard.results('X')).to eq(10)
+  end
 end
